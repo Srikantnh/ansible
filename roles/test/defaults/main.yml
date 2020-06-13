@@ -3,3 +3,4 @@
 mongo_packages:
 - git
 - wget
+- tree
