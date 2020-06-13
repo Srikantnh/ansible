@@ -1,0 +1,6 @@
+---
+- name: Prechecks
+  import_tasks: packages.yml
+  tags: prechecks
+- name: Pre
+  import_tasks: bashrc.yml
