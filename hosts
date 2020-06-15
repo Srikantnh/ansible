@@ -9,7 +9,7 @@
 #   - A hostname/ip can be a member of multiple groups
 
 # Ex 1: Ungrouped hosts, specify before any group headers.
-35.223.253.231
+#35.223.253.231
 ## green.example.com
 ## blue.example.com
 ## 192.168.100.1
@@ -17,7 +17,7 @@
 
 # Ex 2: A collection of hosts belonging to the 'webservers' group
 [jenkins]
-35.223.253.231
+34.71.94.64
 ## [webservers]
 ## alpha.example.org
 ## beta.example.org
