@@ -4,3 +4,7 @@
   tags: prechecks
 - name: Pre
   import_tasks: bashrc.yml
+  tags: bash
+- name: yum
+  import_tasks: yum.yml
+  tags: yumrepo

@@ -1,0 +1,23 @@
+- name: add services
+  become: yes
+  become_user: root
+  register: find_output
+  blockinfile: 
+       dest: /opt/test.txt
+       state: present
+       insertafter: EOF
+       create: yes
+       content: |
+        ------------------------------------------------------------------------------------------------------------------------------------------
+        [yum.i686]
+        name=i686
+        baseurl=http://mirror.centos.org/altarch/7/os/i386
+        http://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64
+        enabled=1
+
+
+        ------------------------------------------------------------------------------------------------------------------------------------------
+
+    - debug:
+      var: find_output
+
